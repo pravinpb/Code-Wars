@@ -17,7 +17,97 @@
 
 # https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/python
 
+# def duplicate_count(text):
+#     count = 0
+#     tex = [i.lower() for i in text]
+#     tes = set(tex)
+#     for i in tes:
+#         if tex.count(i) > 1:
+#             count += 1
+#             for _ in range(tex.count(i)):
+#                 tex.remove(i)
+#         else:
+#             pass
+#     return count
 
 
-#
+#https://www.codewars.com/kata/5526fc09a1bbd946250002dc/train/python
 
+# def find_outlier(integers):
+#     even = [num for num in integers if int(num)%2 == 0]
+#     odd = [num for num in integers if int(num)%2 != 0]
+#     if len(odd) == 1:
+#         return odd[0]
+#     if len(even) == 1:
+#         return even[0]
+
+
+
+#https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/python
+
+# def duplicate_encode(word):
+#     lis = list(word.upper())
+#     res = ''
+#     for i in lis:
+#         if lis.count(i) == 1:
+#             res += '('
+#         else:
+#             res += ')'
+#     return res
+
+
+
+#https://www.codewars.com/kata/546f922b54af40e1e90001da/train/python
+
+# def alphabet_position(text):
+#     alp = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+#     tex = [i.upper() for i in text if i.upper() in alp]
+#     ind = [str(alp.index(j) + 1) for j in tex]
+#     return ' '.join(ind)
+
+
+#https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/python
+
+# def persistence(n):
+#     q = [int(i) for i in str(n)]
+#     r = 1
+#     count = 1
+#     for k in q:
+#         r *= k
+#     while len(str(r)) >= 2:
+#         n = r
+#         r = 1
+#         p = [int(j) for j in str(n)]
+#         count += 1
+#         for l in p:
+#             r *= l
+#     if len(str(n)) == 1:
+#         return 0
+#     else:
+#         return count
+
+#https://www.codewars.com/kata/54da539698b8a2ad76000228/train/python
+
+# def is_valid_walk(walk):
+#     if len(walk) == 10:
+#         if walk.count('n') == walk.count('s') and walk.count('w') == walk.count('e'):
+#             return True
+#         else:
+#             return False
+#     else:
+#         return False
+
+
+#https://www.codewars.com/kata/54e6533c92449cc251001667/train/python
+
+# def unique_in_order(iterable):
+#     res = []
+#     inp = list(iterable)
+#     for i in range(len(inp)):
+#         if res == []:
+#             res.append(inp[0])
+#         elif inp[i] != res[-1]:
+#             res.append(inp[i])
+#         else:
+#             pass
+#     return res
