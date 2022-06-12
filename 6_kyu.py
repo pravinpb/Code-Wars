@@ -145,13 +145,13 @@
 
 # https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/python
 
-def narcissistic( value ):
-    sum = 0
-    for i in str(value):
-        i=int(i)
-        i = i**len(str(value))
-        sum += i
-    return sum == value
+# def narcissistic( value ):
+#     sum = 0
+#     for i in str(value):
+#         i=int(i)
+#         i = i**len(str(value))
+#         sum += i
+#     return sum == value
 
-p = narcissistic(153)
-print(p)
+# p = narcissistic(153)
+# print(p)
