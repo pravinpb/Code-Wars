@@ -111,3 +111,47 @@
 #         else:
 #             pass
 #     return res
+
+#https://www.codewars.com/kata/517abf86da9663f1d2000003/train/python
+
+# import re
+# def to_camel_case(text):
+#     sep = re.split(', |_|-|!|\+',text)
+#     res = []
+#     for i in sep:
+#         if sep.index(i) == 0:
+#             res.append(i)
+#         else:
+#             res.append(i.capitalize())
+#     return ''.join(res)
+
+
+
+#https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/python
+# from dataclasses import replace
+# import re
+
+
+# def is_pangram(s):
+#     ref = [i for i in 'abcdefghijklmnopqrstuvwxyz']
+#     sep = re.split(', |_|-|!|\+',s)
+#     stri = ''.join(sep)
+#     joint = stri.replace(' ','')
+#     pra = [i.lower() for i in joint]
+#     prav = list(set(pra))
+#     prav.sort()
+#     prav = [k for k in prav if k.isalpha()]
+#     return prav == ref
+
+# https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/python
+
+def narcissistic( value ):
+    sum = 0
+    for i in str(value):
+        i=int(i)
+        i = i**len(str(value))
+        sum += i
+    return sum == value
+
+p = narcissistic(153)
+print(p)
