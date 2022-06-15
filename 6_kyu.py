@@ -145,13 +145,51 @@
 
 # https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/python
 
-def narcissistic( value ):
-    sum = 0
-    for i in str(value):
-        i=int(i)
-        i = i**len(str(value))
-        sum += i
-    return sum == value
+# def narcissistic( value ):
+#     sum = 0
+#     for i in str(value):
+#         i=int(i)
+#         i = i**len(str(value))
+#         sum += i
+#     return sum == value
 
-p = narcissistic(153)
-print(p)
+
+
+#https://www.codewars.com/kata/556deca17c58da83c00002db/train/python
+
+# def tribonacci(signature, n):
+#     res = signature
+#     for i in range(n-3):
+#         res.append(sum(res[-3:]))   
+#     return res
+
+#https://www.codewars.com/kata/5552101f47fc5178b1000050/train/python
+
+# def dig_pow(n, p):
+#     sum1 = 0
+#     for i in str(n):
+#         sum1 += int(i) ** p
+#         p += 1 
+#     p = sum1/n
+#     if p-round(p) == 0:
+#         return int(p)
+#     else:
+#         return -1
+
+
+# https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/python
+
+# def solution(s):
+#     u = []
+#     if s != '':
+#         for i in range(0,len(s),2):
+#             u.append(s[i:i+2])
+#         if len(u[-1]) == 1:
+#             u[-1] = u[-1] + '_'
+#         else:
+#             pass
+#         return u
+#     else:
+#         return []
+
+
