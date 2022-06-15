@@ -152,6 +152,7 @@
 #         i = i**len(str(value))
 #         sum += i
 #     return sum == value
+<<<<<<< HEAD
 
 
 
@@ -191,5 +192,4 @@
 #         return u
 #     else:
 #         return []
-
 
