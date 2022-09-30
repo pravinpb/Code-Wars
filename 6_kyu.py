@@ -152,7 +152,6 @@
 #         i = i**len(str(value))
 #         sum += i
 #     return sum == value
-<<<<<<< HEAD
 
 
 
@@ -193,4 +192,93 @@
 #     else:
 #         return []
 
-# 
+# def comp(a,b):
+#     a.sort()
+#     a.sort()
+#     c = [int(num**0.5) for num in b]
+#     c = list(set(c))
+#     a = list(set(a))
+#     a.sort()
+#     c.sort()
+#     if c == a:
+#         return True
+#     else:
+#         print(a)
+#         print(c)
+#         return False
+
+
+# a = [121, 144, 19, 161, 19, 144, 19, 11]
+# b = [11*11, 121*121, 144*144, 190*190, 161*161, 19*19, 144*144, 19*19]
+
+# f = comp(a,b)
+# print(f)
+
+
+# https://www.codewars.com/kata/5839edaa6754d6fec10000a2/train/python
+# apl = list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+
+
+# def find_missing_letter(a):
+#     n = len(a)
+
+#     ind = apl.index(a[0])
+#     r = apl[ind:ind+1+n]
+#     ad = ""
+#     for i in r:
+#         if i not in a:
+#             ad += i
+#     return ad
+
+
+
+# https://www.codewars.com/kata/583203e6eb35d7980400002a/train/python
+# def count_smileys(arr):
+#     count = 0
+#     for str in arr:
+#         str_lis = list(str)
+#         if str_lis[0] == ';' or str_lis[0] == ':':
+#             if str_lis[1] == ')' or str_lis[1] == 'D':
+#                 count += 1
+#             elif str_lis[1] == '-' or str_lis[1] == '~':
+#                 if str_lis[2] == ')' or str_lis[2] == 'D':
+#                     count += 1
+#     return count
+
+
+# https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/train/python
+
+
+
+def high(x):
+    def index_maxi(arr,numb):
+        for i in range(len(arr)) :
+            if arr[i] == numb :
+                return i
+
+    def alph_value(alpha):
+        alph = 'abcdefghijklmnopqrstuvwxyz'
+        return alph.index(alpha)+1
+    num_lis = []
+    lis = x.split()
+    for i in lis:
+        sum = 0
+        for j in i:
+            sum += int(alph_value(j))
+        num_lis.append(sum)
+    maxi_num = max(num_lis)
+    ind = index_maxi(num_lis,maxi_num)
+    return lis[ind]
+
+c =  high('man i need a taxi up to ubud')
+print(c)
+
+# alph = 'abcdefghijklmnopqrstuvwxyz'
+# def alph_value(alpha):
+#     alph = 'abcdefghijklmnopqrstuvwxyz'
+#     return alph.index(alpha)+1
+
+# for i in alph:
+#     print(i)
+#     b = alph_value(i)
+#     print(b)
