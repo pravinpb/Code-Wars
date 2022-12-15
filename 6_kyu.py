@@ -247,38 +247,33 @@
 
 
 # https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/train/python
+# def high(x):
+#     def index_maxi(arr,numb):
+#         for i in range(len(arr)) :
+#             if arr[i] == numb :
+#                 return i
+
+#     def alph_value(alpha):
+#         alph = 'abcdefghijklmnopqrstuvwxyz'
+#         return alph.index(alpha)+1
+#     num_lis = []
+#     lis = x.split()
+#     for i in lis:
+#         sum = 0
+#         for j in i:
+#             sum += int(alph_value(j))
+#         num_lis.append(sum)
+#     maxi_num = max(num_lis)
+#     ind = index_maxi(num_lis,maxi_num)
+#     return lis[ind]
 
 
+# https://www.codewars.com/kata/638bc5d372d41880c7a99edc/train/python
 
-def high(x):
-    def index_maxi(arr,numb):
-        for i in range(len(arr)) :
-            if arr[i] == numb :
-                return i
-
-    def alph_value(alpha):
-        alph = 'abcdefghijklmnopqrstuvwxyz'
-        return alph.index(alpha)+1
-    num_lis = []
-    lis = x.split()
-    for i in lis:
-        sum = 0
-        for j in i:
-            sum += int(alph_value(j))
-        num_lis.append(sum)
-    maxi_num = max(num_lis)
-    ind = index_maxi(num_lis,maxi_num)
-    return lis[ind]
-
-c =  high('man i need a taxi up to ubud')
-print(c)
-
-# alph = 'abcdefghijklmnopqrstuvwxyz'
-# def alph_value(alpha):
-#     alph = 'abcdefghijklmnopqrstuvwxyz'
-#     return alph.index(alpha)+1
-
-# for i in alph:
-#     print(i)
-#     b = alph_value(i)
-#     print(b)
+f = 666
+m = 10*9+7
+summ = 0
+for i in range(0,f+1):
+    summ += (2**i)*(i**2)
+summ = summ%m
+print(summ)

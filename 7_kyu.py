@@ -35,3 +35,24 @@ def DNA_strand(dna):
 # https://www.codewars.com/kata/55b42574ff091733d900002f/train/python
 # def friend(x):
 #     return [i for i in x if len(i) == 4 ]
+
+
+
+#https://www.codewars.com/kata/56582133c932d8239900002e/train/python
+# def most_frequent_item_count(collection):
+#     lis = []
+#     uniq = set(collection)
+#     print(uniq)
+#     for i in uniq:
+#         suma = 0
+#         for j in collection:
+#             if i == j:
+#                 suma +=1
+#         lis.append(suma)
+#     return max(lis)
+        
+
+# https://www.codewars.com/kata/57f609022f4d534f05000024/train/python
+# def stray(arr):
+#     arr.sort()
+#     return arr[-1] if arr.count(arr[0]) > 1 else arr[0]
