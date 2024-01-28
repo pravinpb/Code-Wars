@@ -1,16 +1,3 @@
-# https://www.codewars.com/kata/554e4a2f232cdd87d9000038/train/python
-from audioop import add
-
-
-def DNA_strand(dna):
-    lis = list(dna)
-    dict = {'A':'T','G':'C','T':'A','C':'G'}
-    for i in range(len(dna)):
-        val = dict[dna[i]]
-        lis[i] = val
-    return ''.join(lis)
-
-
 # https://www.codewars.com/kata/55f2b110f61eb01779000053/train/python
 # def get_sum(a,b):
 #     sum = 0
@@ -56,3 +43,9 @@ def DNA_strand(dna):
 # def stray(arr):
 #     arr.sort()
 #     return arr[-1] if arr.count(arr[0]) > 1 else arr[0]
+
+
+# https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/python
+# def solution(text, ending):
+#     return True if text[-len(ending):] == ending else False
+
