@@ -36,6 +36,7 @@
 # def basic_op(operator, value1, value2):
 #     return eval(str(value1) + str(operator) + str(value2))
 
-
-
+# https://www.codewars.com/kata/65ba420888906c1f86e1e680/train/python
+# def collinearity(x1, y1, x2, y2):
+#     return x1*y2 == x2*y1
 
